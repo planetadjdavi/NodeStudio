@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+
+    <style>
+        table,th,td { border: solid #000;
+
+        }
+
+        th, td{padding:7px
+        }
+
+        .Nome { background-color: red;}
+        .Email{ background-color: green;}
+        .Telefone{background-color:blue}
+        .Cargo{background-color: yellow}
+        
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <table>
+        <caption> Cadastro de Clientes</caption>
+<colgroup>
+
+    <col class="Nome">
+    <col class="Email">
+    <col class="Telefone">
+    <col class="Cargo">
+</colgroup>
+
+<!--atributo col seleciona a linha e a coluna aotomaticamente -->  
+<!--colgroup vai mudar as linhas e colunas da tabela de acordo com a classe associada -->
+
+        <tr>
+        <th>Nome:</th>
+        <th>Email:</th>
+        <th>Telefone:</th>
+        <th>Cargo:</th>
+
+        </tr>
+
+        <tr>
+            <td>Davi</td>
+            <td>cd.davi.falcao@gmail.com</td>
+            <td>(85)34910010</td>
+            <td rowspan="2">Desenvolvedor web</td>
+            <!--O rowspan completa as 2 linhas de baixo com o cargo desenvolvedor-->
+        </tr>
+
+        <tr>
+            <td>Pedro</td>
+            <td>davi_fmd_@hotmail.com</td>
+            <td>(85)988490976</td>
+        </tr>
+
+        <tr>
+            <td colspan="4">Total:2</td>
+            <!--Ele completa as colunas que faltam informações as 4-->
+        </tr>
+    </table>
+</body>
+</html>
