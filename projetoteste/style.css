@@ -1,0 +1,56 @@
+* {
+
+margin: 0%;
+padding: 0%;
+
+}
+
+
+
+body,p{
+    padding: 10px;
+    color: rgb(69, 167, 69);
+    
+    
+}
+
+
+#cabeçalho {
+
+    margin: ;
+    background-color: rgb(69, 167, 69);
+    text-align: center;
+    color: white;
+}
+
+
+#cabeçalho2 {
+
+margin-top: 300px;
+
+}
+
+
+
+.link1 {
+    font-size: 25px;
+    text-decoration:none; 
+    color: rgb(69, 167, 69);
+      
+
+}
+
+
+.figura1 {
+
+    height: 60%;
+    width: 80%;
+}
+
+
+
+
+
+
+
+
