@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- o method pode ser get ou post 
+    
+        O metodo get envia pela própria url e pode ser conferido na url de envio
+    -->
+    <form action="cadastro.php" >
+<fieldset>
+    <legend>informações pessoais</legend>
+
+    <!--o atributo "required" faz o prenchimento da tag ser obrigatório, já o atributo "autofocus" deixa 
+    Ela focada antes de prencher. Já o atributo "disable" desabilita o campo.
+    -->
+        Nome: <br>
+        <input type="text" name="nome" required autofocus> <br>
+        Senha: <br>
+
+        <!-- O atributo maxlength determina o número máximo de caracteres -->
+        <input type="password" name="senha" maxlength="5"> <br> 
+
+        Email: <br>
+        <input type="email" name="email" required><br><br>
+
+
+        <!--O atributo checked vai definir por padrão quem vai começar na caixa-->
+        Time: <br>
+        <input type="radio" name="time" value="vasco" checked > Vasco <br>
+        <input type="radio" name="time" value="botafogo">  Botafogo <br>
+        <input type="radio" name="time" value="flamengo"> Flamengo <br> <br>
+
+
+        Cores: <br>
+        <!--O atributo checked define por padrão na tela quem vai começar marcado no checkbox-->
+        <input type="checkbox" value="azul" checked> Azul <br>
+        <input type="checkbox" value="laranja"> Laranja <br>
+        <input type="checkbox" value="preto"> Preto <br> <br>
+
+        <!--No value definimos o nome que aparece no botão e no name quando colocamos o mouse-->
+        <input type="submit" name="btn-enviar" value="Enviar">
+
+</fieldset>
+
+<!--O fieldset cria uma caixa selecionando todo o cadastro, e a tag legend o nome superior na caixa-->
+    </form>
+</body>
+</html>
