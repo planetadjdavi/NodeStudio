@@ -11,7 +11,7 @@
     
         O metodo get envia pela própria url e pode ser conferido na url de envio
     -->
-    <form action="cadastro.php" >
+    <form action="cadastro.php" method="GET" >
 <fieldset>
     <legend>informações pessoais</legend>
 
@@ -19,14 +19,18 @@
     Ela focada antes de prencher. Já o atributo "disable" desabilita o campo.
     -->
         Nome: <br>
-        <input type="text" name="nome" required autofocus> <br>
+        <input type="text" name="nome" required autofocus placeholder="nome"> <br>
         Senha: <br>
 
         <!-- O atributo maxlength determina o número máximo de caracteres -->
         <input type="password" name="senha" maxlength="5"> <br> 
 
+        <!--O atributo autocomplete serve para aparecer "on" ou não "off" opção
+             de completar automáticamente-->
+
+             <!--Já a opção placeholder prenche um texto na caixa antes de ser digitado-->
         Email: <br>
-        <input type="email" name="email" required><br><br>
+        <input type="email" name="email" required autocomplete="off" placeholder="davi@gmail.com"><br><br>
 
 
         <!--O atributo checked vai definir por padrão quem vai começar na caixa-->
@@ -41,6 +45,19 @@
         <input type="checkbox" value="azul" checked> Azul <br>
         <input type="checkbox" value="laranja"> Laranja <br>
         <input type="checkbox" value="preto"> Preto <br> <br>
+
+
+        <!--Definimos um campo numérico. Os atributos min e max definem o mínimo e o máximo de
+        números que o campo pode colocar. E o atributo step é o começo da definição
+        -->
+        Número: <br>
+        <input type="number" name="numero" min="0" max="500" step="10"> <br>
+
+        Cores: <br>
+        <input type="color" name="cores"> <br>
+
+        Valor: <br>
+        <input type="range" name="valor"> <br>
 
         <!--No value definimos o nome que aparece no botão e no name quando colocamos o mouse-->
         <input type="submit" name="btn-enviar" value="Enviar">
